@@ -51,10 +51,11 @@ public: // メンバ関数
 	/// </summary>
 	void Draw();
 
+	Input* input = nullptr;
+
 private: // メンバ変数
 	DirectXCommon* dxCommon = nullptr;
-	Input* input = nullptr;
-	DebugText debugText;	
+	DebugText debugText;
 
 	/// <summary>
 	/// ゲームシーン用
