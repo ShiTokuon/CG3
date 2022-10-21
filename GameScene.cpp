@@ -72,13 +72,13 @@ void GameScene::Update()
 		else if (input->PushKey(DIK_A)) { Object3d::CameraMoveEyeVector({ -1.0f,0.0f,0.0f }); }
 	}
 
-	//if (input->PushKey(DIK_W) || input->PushKey(DIK_S) || input->PushKey(DIK_D) || input->PushKey(DIK_A))
-	//{
-	//	if (input->PushKey(DIK_W)) { Object3d::CameraMoveVector({ 0.0f,+1.0f,0.0f }); }
-	//	else if (input->PushKey(DIK_S)) { Object3d::CameraMoveVector({ 0.0f,-1.0f,0.0f }); }
-	//	if (input->PushKey(DIK_D)) { Object3d::CameraMoveVector({ +1.0f,0.0f,0.0f }); }
-	//	else if (input->PushKey(DIK_A)) { Object3d::CameraMoveVector({ -1.0f,0.0f,0.0f }); }
-	//}
+	if (input->PushKey(DIK_U) || input->PushKey(DIK_J) || input->PushKey(DIK_H) || input->PushKey(DIK_K))
+	{
+		if (input->PushKey(DIK_U)) { Object3d::CameraMoveVector({ 0.0f,+1.0f,0.0f }); }
+		else if (input->PushKey(DIK_J)) { Object3d::CameraMoveVector({ 0.0f,-1.0f,0.0f }); }
+		if (input->PushKey(DIK_H)) { Object3d::CameraMoveVector({ +1.0f,0.0f,0.0f }); }
+		else if (input->PushKey(DIK_K)) { Object3d::CameraMoveVector({ -1.0f,0.0f,0.0f }); }
+	}
 
 	// スプライトの移動
 	if (input->PushKey(DIK_SPACE)) {
