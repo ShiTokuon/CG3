@@ -16,7 +16,7 @@ void main(
 		GSOutput element;
 		element.svpos = input[i].svpos;
 		element.normal = input[i].normal;
-		element.uv = input[i].uv;
+		element.uv = input[i].uv*2.0f;
 		output.Append(element);
 	}
 }
