@@ -4,7 +4,7 @@
 #include <DirectXMath.h>
 #include "Input.h"
 #include "Sprite.h"
-#include "Object3d.h"
+#include "ParticleManager.h"
 #include "DebugText.h"
 
 /// <summary>
@@ -63,6 +63,7 @@ private: // メンバ変数
 	Sprite* spriteBG = nullptr;
 	Sprite* sprite1 = nullptr;
 	Sprite* sprite2 = nullptr;
-	Object3d* object3d = nullptr;
+	//ParticleManager* particleMan = nullptr;
+	ParticleManager* particleMan = nullptr;
 };
 
