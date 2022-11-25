@@ -115,7 +115,7 @@ void GameScene::Update()
 
 	particleMan->Update();
 
-	for (int i = 0; i < 100; i++) {
+	for (int i = 0; i < 10; i++) {
 		// X,Y,Zすべて[-5.0f,+5.0f]でランダムに分布
 		const float rnd_pos = 10.0f;
 		XMFLOAT3 pos{};
@@ -134,9 +134,9 @@ void GameScene::Update()
 		acc.y = -(float)rand() / RAND_MAX * rnd_acc;
 
 		// 追加
-		particleMan->Add(60, pos, vel, acc);
+		//particleMan->Add(60, pos, vel, acc);
+		particleMan->Add(60, pos, vel, acc, 1.0f, 0.0f);
 	}
-
 }
 
 void GameScene::Draw()
