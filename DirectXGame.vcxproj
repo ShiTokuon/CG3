@@ -144,6 +144,7 @@
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">main</EntryPointName>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">main</EntryPointName>
     </FxCompile>
+    <None Include="補足.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shaders\Particle.hlsli" />

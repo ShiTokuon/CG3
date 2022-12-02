@@ -67,6 +67,9 @@
     <None Include="Resources\shaders\SpriteShaderHeader.hlsli">
       <Filter>シェーダー ファイル</Filter>
     </None>
+    <None Include="補足.md">
+      <Filter>シェーダー ファイル\リソース ファイル</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sprite.h">
